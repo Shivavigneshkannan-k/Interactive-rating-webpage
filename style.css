@@ -1,0 +1,115 @@
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin:0;
+}
+:root{
+    /* Primary */
+    --active-state:hsl(25, 97%, 53%);
+
+    /* Neutral */
+    --White: hsl(0, 0%, 100%);
+    --font-clr: hsl(217, 12%, 63%);
+    --font-clr100: hsla(217, 12%, 63%, 0.10);
+    --container-bg: hsl(213, 19%, 18%);
+    --body-bg: hsl(216, 12%, 8%);
+    
+    --paragraph-size:15px;
+}
+body{
+    background-color: var(--body-bg);
+    font-family:Arial, Helvetica, sans-serif;
+
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    background-color: var(--container-bg);
+    color: var(--White);
+
+    padding:1.5em 1em;
+
+    width:90%;
+
+    border-radius: 20px;
+
+    text-align: left;
+    
+}
+.container>*{
+    padding: 0.75em;
+}
+.container p{
+    color: var(--font-clr);
+    font-size: 0.9em;
+    line-height: 22.5px;
+}
+.rating{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:1em;
+    
+    }
+.rating-btn{
+    font-size: 0.9em;
+    color:var(--font-clr);
+    background-color: var(--font-clr100);
+    
+    border: none;
+    
+    border-radius: 50%;
+    padding:1em 1.25em;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#fav-icon{
+    width:fit-content;
+
+    border-radius: 50%;
+    padding: 1em;
+    background-color:var(--font-clr100) ;
+}
+.submit-btn{
+    background-color: var(--active-state);
+    color: var(--body-bg);
+    width: 100%;
+    padding:0.75em 0em ;
+
+    
+    font-size: 0.9em;
+    letter-spacing: 2px;
+    font-weight: 500;
+
+    border: none;
+    border-radius: 20px;
+    margin-top: 1em;
+}
+
+/* thankyou page */
+.thankyou-page{
+    margin-top: 1em;
+}
+
+/* hover property */
+.rating-btn:hover{
+    background-color: var(--White);
+    color:var(--body-bg);
+}
+.rating-btn:active{
+    background-color: var(--active-state);
+}
+    
+.submit-btn:hover{
+    background-color: var(--White);
+    color:var(--body-bg);
+}
