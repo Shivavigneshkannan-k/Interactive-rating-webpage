@@ -48,7 +48,7 @@ body{
     font-size: 0.9em;
     line-height: 22.5px;
 }
-.rating{
+/* .rating{
 
     display: flex;
     flex-direction: row;
@@ -71,7 +71,7 @@ body{
     justify-content: center;
     align-items: center;
 }
-
+*/
 #fav-icon{
     width:fit-content;
 
@@ -79,6 +79,45 @@ body{
     padding: 1em;
     background-color:var(--font-clr100) ;
 }
+ .form-container{
+    /* position: relative; */
+
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    gap: 1em;
+
+    margin-bottom: 2em;
+    }
+.option-container{
+    position: relative;
+     display: flex;
+     justify-content: center;
+     align-self: center;
+     gap:0em;
+ }
+ .option-container>input{
+    position: absolute;
+    width: 4em;
+    height:4em;
+    opacity: 0;
+    z-index: 2;
+ }
+ .option-container label{
+    font-size: 1em;
+    position: relative;
+    top:1em;
+    z-index: 1;
+
+    border-radius: 50%;
+
+    padding: 1em 1.20em;
+
+    color:var(--font-clr);
+    background-color: var(--font-clr100);
+
+ }
+
 .submit-btn{
     background-color: var(--active-state);
     color: var(--body-bg);
@@ -101,7 +140,7 @@ body{
 }
 
 /* hover property */
-.rating-btn:hover{
+.option-container:hover{
     background-color: var(--White);
     color:var(--body-bg);
 }
