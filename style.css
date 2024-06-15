@@ -91,16 +91,20 @@ body{
     }
 .option-container{
     position: relative;
-     display: flex;
-     justify-content: center;
-     align-self: center;
-     gap:0em;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    gap:0em;
+    width: 4em;
+    height:3em;
+    border-radius: 50%;
  }
  .option-container>input{
     position: absolute;
+    color:inherit;
     width: 4em;
     height:4em;
-    opacity: 0;
+    opacity: 0.25;
     z-index: 2;
  }
  .option-container label{
@@ -122,7 +126,7 @@ body{
     background-color: var(--active-state);
     color: var(--body-bg);
     width: 100%;
-    padding:0.75em 0em ;
+    padding:0.75em 0em;
 
     
     font-size: 0.9em;
