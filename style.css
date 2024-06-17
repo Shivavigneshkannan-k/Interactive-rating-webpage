@@ -160,3 +160,10 @@ form{
 .hidden{
     display: none;
 }
+@media (min-width: 385px) {
+    
+.container{
+    width: 350px;
+}
+
+}
